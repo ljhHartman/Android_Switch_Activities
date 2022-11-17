@@ -1,0 +1,58 @@
+/*
+# ----------------------------------------------------------------
+# Source
+# ----------------------------------------------------------------
+https://learntodroid.com/how-to-switch-between-activities-in-android/
+
+https://github.com/learntodroid/SwitchingBetweenActivities
+
+
+
+# ----------------------------------------------------------------
+# Goal
+# ----------------------------------------------------------------
+- Create multiple Activities for different screens within your app,
+  and migrate data from one page to the other.
+
+
+
+# ----------------------------------------------------------------
+# Steps
+# ----------------------------------------------------------------
+1. Create Activities layout and class
+2. Add link string names to "res > values > strings.xml"
+3. Add Both Activities to   "AndroidManifest.xml"
+4. Set onClick SwitchActivities
+
+
+
+# ----------------------------------------------------------------
+# Application Flow
+# ----------------------------------------------------------------
+
+
+
+# ----------------------------------------------------------------
+# Error Fix
+# ----------------------------------------------------------------
+
+WARNING: Hardcoded text
+res > values > strings.xml
+-  As a general rule, you should never use hardcoded strings in your
+layout but always use string resources (which means the all strings
+are stored in one separate file where they are easily changeable for
+different languages and so on).
+- Fix > Resource Value = label/text
+
+ERROR: Can't determine type for tag '<macro name="m3_comp_bottom_app_bar_container_color">?attr/colorSurface</macro>'
+- You are working in a older version of Android Studio
+Replace :
+implementation 'androidx.appcompat:appcompat:1.5.1'
+implementation 'com.google.android.material:material:1.7.0'
+with:
+implementation 'androidx.appcompat:appcompat:1.4.1'
+implementation 'com.google.android.material:material:1.6.0'
+
+
+
+ */
